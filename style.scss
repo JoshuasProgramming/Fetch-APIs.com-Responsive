@@ -1,0 +1,209 @@
+//Importing fonts and setting variables
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+$blue-box-shadow:1px 1px 11px rgb(77, 145, 255);
+$neonBlue: rgb(77, 145, 255);
+$neonyellow: rgb(255, 252, 77);
+
+//universal
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+}
+
+//Setting the background color
+body{
+    font-size: 100%;
+    color:rgb(255, 255, 255);
+    background: linear-gradient(132deg, #2c2c2c, #000c32, #7b88ff);
+    background-size: 400% 400%;
+}
+
+//setting the properties for every p (paragraph tag)
+p{
+    font-size:25px;
+    color:rgb(255, 255, 255);
+}
+
+//Navigation begins below
+.top-2{
+    min-height: 100%;
+    width:100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .top-2-text{
+        max-width:600%;
+        width: calc(100% - 40px);
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+
+        //Depicts the width and height of the index.htl hero section text. vw and vh affect responsiveness (BE CAREFUL WHEN ADJUSTING )
+        //I recommend to stay at 12vw & 9vh for this website, as it'll be unresponsive without it.
+        .home-header{
+            font-size: 12vw;
+            font-size:9vh;
+            text-shadow: 5px 5px 19px black;
+        }
+        .blue{
+            color:$neonBlue;
+        }
+
+        .header-text-btn{
+            max-width:200px;
+            font-size:10vw;
+            font-size:4vh;
+            opacity:80%;
+            &:hover{
+                opacity:100%;
+                cursor:pointer;
+            }
+            &:active{
+                box-shadow: $blue-box-shadow; 
+            }
+        }
+    }
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    height:49px;
+    width:100%;
+    background-color: black;
+    color:whitesmoke;
+    box-shadow: 1px 1px 6px $neonBlue;
+    position: fixed;
+    z-index:999;
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:auto auto;
+        max-width:1028px;
+        width: calc(100% - 30px);
+        height: 100%;
+
+        span{
+            color:yellow;
+        }
+
+        p{
+            font-family: 'Lobster', cursive;
+            font-size:28px;
+
+            .landing-direct{
+                text-decoration:none;
+                color:white;
+                
+            }
+
+            .landing-direct:hover{
+                border-bottom: 1px solid black;
+                transition: 1s;
+                cursor:pointer;
+            }
+    
+        }
+
+        .navbar{
+            display: flex;
+            height:30px;
+            
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    font-size: 1.9vw;
+                    margin:5px 30px 0px 0px;
+                    margin-top: -100px;
+                    color: white;
+
+                    &:hover{
+                        border-bottom: 1px solid black;
+                        transition: 3s;
+                    }
+                } 
+            }
+        }
+
+        .ham{
+            height: calc(100% - 39px);
+            display: none;
+        }
+
+        @media screen and (max-width: 900px) {
+            .ham{
+                display:inline-block;
+                max-width:30px;
+                height:30px;
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+            } 
+
+            .navbar{
+                display:none;
+            }
+        }
+    }
+}
+
+.popup{
+    position:fixed;
+    background: $neonBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index:999;
+    transition-duration: 1s;
+    transition-property: transform;
+
+    .ham-ul{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: transform 1s ease-in;
+        transform: translate(-6000px, 0px);
+
+        .close-popup{
+            color:white;
+        }
+    }
+
+    li{
+        list-style: none;
+        margin:10px;
+        a{
+            text-decoration: none;
+            font-size: 12vw;
+            color: black;
+        } &:hover{
+            font-weight: bold;
+        }
+    }
+}
+
+.disabled{
+    display: none;
+    background: black;
+}

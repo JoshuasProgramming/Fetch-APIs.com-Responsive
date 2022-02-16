@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 3px;
+}
+
+body {
+  font-size: 100%;
+  color: white;
+  background: linear-gradient(132deg, #2c2c2c, #000c32, #7b88ff);
+  background-size: 400% 400%;
+}
+
+p {
+  font-size: 25px;
+  color: white;
+}
+
+.top-2 {
+  min-height: 100%;
+  width: 100%;
+  float: left;
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.top-2 .top-2-text {
+  max-width: 600%;
+  width: calc(100% - 40px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.top-2 .top-2-text .home-header {
+  font-size: 12vw;
+  font-size: 9vh;
+  text-shadow: 5px 5px 19px black;
+}
+
+.top-2 .top-2-text .blue {
+  color: #4d91ff;
+}
+
+.top-2 .top-2-text .header-text-btn {
+  max-width: 200px;
+  font-size: 10vw;
+  font-size: 4vh;
+  opacity: 80%;
+}
+
+.top-2 .top-2-text .header-text-btn:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.top-2 .top-2-text .header-text-btn:active {
+  -webkit-box-shadow: 1px 1px 11px #4d91ff;
+          box-shadow: 1px 1px 11px #4d91ff;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 49px;
+  width: 100%;
+  background-color: black;
+  color: whitesmoke;
+  -webkit-box-shadow: 1px 1px 6px #4d91ff;
+          box-shadow: 1px 1px 6px #4d91ff;
+  position: fixed;
+  z-index: 999;
+}
+
+.top header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto auto;
+  max-width: 1028px;
+  width: calc(100% - 30px);
+  height: 100%;
+}
+
+.top header span {
+  color: yellow;
+}
+
+.top header p {
+  font-family: 'Lobster', cursive;
+  font-size: 28px;
+}
+
+.top header p .landing-direct {
+  text-decoration: none;
+  color: white;
+}
+
+.top header p .landing-direct:hover {
+  border-bottom: 1px solid black;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.top header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+}
+
+.top header .navbar li {
+  list-style: none;
+}
+
+.top header .navbar li a {
+  text-decoration: none;
+  font-size: 1.9vw;
+  margin: 5px 30px 0px 0px;
+  margin-top: -100px;
+  color: white;
+}
+
+.top header .navbar li a:hover {
+  border-bottom: 1px solid black;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.top header .ham {
+  height: calc(100% - 39px);
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .top header .ham {
+    display: inline-block;
+    max-width: 30px;
+    height: 30px;
+  }
+  .top header .ham:hover {
+    cursor: pointer;
+  }
+  .top header .navbar {
+    display: none;
+  }
+}
+
+.popup {
+  position: fixed;
+  background: #4d91ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.popup .ham-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transition: -webkit-transform 1s ease-in;
+  transition: -webkit-transform 1s ease-in;
+  transition: transform 1s ease-in;
+  transition: transform 1s ease-in, -webkit-transform 1s ease-in;
+  -webkit-transform: translate(-6000px, 0px);
+          transform: translate(-6000px, 0px);
+}
+
+.popup .ham-ul .close-popup {
+  color: white;
+}
+
+.popup li {
+  list-style: none;
+  margin: 10px;
+}
+
+.popup li a {
+  text-decoration: none;
+  font-size: 12vw;
+  color: black;
+}
+
+.popup li:hover {
+  font-weight: bold;
+}
+
+.disabled {
+  display: none;
+  background: black;
+}
+/*# sourceMappingURL=style.css.map */
