@@ -102,7 +102,19 @@ p {
 }
 
 .top-2 .top-2-text .select-covid-api {
-  margin: 25px;
+  outline: none;
+  width: 350px;
+  height: 45px;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 11px #4d91ff;
+          box-shadow: 1px 1px 11px #4d91ff;
+  border: none;
+  font-size: 25px;
+  text-align: center;
+  margin: 20px;
+}
+
+.top-2 .top-2-text .random-movie-btn {
   outline: none;
   width: 350px;
   height: 45px;
@@ -114,17 +126,87 @@ p {
   text-align: center;
 }
 
-@media screen and (max-width: 280px) {
+.top-2 .top-2-text .movie-image-output {
+  width: 350px;
+  height: 45px;
+}
+
+@media screen and (max-width: 912px) {
   .top-2 .top-2-text .select-covid-api {
     width: 250px;
   }
   .top-2 .top-2-text .search-covid-api {
     width: 250px;
   }
+  .top-2 .top-2-text .random-movie-btn {
+    width: 200px;
+    height: 100px;
+  }
+  .top-2 .top-2-text .movie-image-output {
+    margin: 30px;
+    width: 200px;
+    height: 205px;
+  }
 }
 
-@media screen and (min-width: 820px) and (max-width: 1368px) {
+@media screen and (min-width: 653px) and (max-width: 654px) {
   .top-2 .top-2-text .select-covid-api {
+    width: 250px;
+  }
+  .top-2 .top-2-text .search-covid-api {
+    width: 250px;
+  }
+  .top-2 .top-2-text .random-movie-btn {
+    width: 1000px;
+  }
+  .top-2 .top-2-text .movie-image-output {
+    margin: 0px;
+    width: 400px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 653px) and (max-width: 915px) {
+  .top-2 .top-2-text .select-covid-api {
+    width: 250px;
+  }
+  .top-2 .top-2-text .search-covid-api {
+    width: 250px;
+  }
+  .top-2 .top-2-text .random-movie-btn {
+    width: 300px;
+    height: 75px;
+    font-size: 3vw;
+    font-size: 2.3vh;
+  }
+  .top-2 .top-2-text .movie-image-output {
+    margin: 10px;
+    width: 400px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 913px) and (max-width: 914px) {
+  .top-2 .top-2-text .select-covid-api {
+    width: 250px;
+  }
+  .top-2 .top-2-text .search-covid-api {
+    width: 250px;
+  }
+  .top-2 .top-2-text .random-movie-btn {
+    width: 200px;
+    height: 60px;
+  }
+  .top-2 .top-2-text .movie-image-output {
+    margin: 10px;
+    width: 300px;
+    height: 155px;
+  }
+}
+
+@media screen and (min-width: 920px) and (max-width: 1368px) {
+  .top-2 .top-2-text .select-covid-api {
+    margin: 20px;
     width: 550px;
     height: 75px;
   }
@@ -135,6 +217,11 @@ p {
   .top-2 .top-2-text .output-text {
     font-size: 8vw;
     font-size: 8vh;
+  }
+  .top-2 .top-2-text .movie-image-output {
+    margin: 15px;
+    width: 400px;
+    height: 350px;
   }
 }
 
@@ -153,6 +240,9 @@ p {
     font-size: 8vw;
     font-size: 8vh;
   }
+  .top-2 .top-2-text .random-movie-btn {
+    width: 1000px;
+  }
 }
 
 @media screen and (min-height: 1555px) {
@@ -169,6 +259,21 @@ p {
   .top-2 .top-2-text .output-text {
     font-size: 8vw;
     font-size: 8vh;
+  }
+  .top-2 .top-2-text .movie-image-output {
+    margin: 30px;
+    width: 1000px;
+    height: 800px;
+  }
+  .top-2 .top-2-text .movie_image_title {
+    font-size: 8vw;
+    font-size: 8vh;
+  }
+  .top-2 .top-2-text .random-movie-btn {
+    width: 1000px;
+    height: 150px;
+    font-size: 4vw;
+    font-size: 4vh;
   }
 }
 

@@ -48,7 +48,7 @@ const random_movie_btn = document.getElementById('random_movie_btn').addEventLis
 
             image1.style.visibility = "visible";
             image1.src = "https://www.themoviedb.org/t/p/original" + data.backdrop_path;
-            movie_image_title.innerText = "Title: " +data.original_title;
+            movie_image_title.innerText = data.original_title;
         }
     }); 
 });
