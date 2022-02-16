@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 $blue-box-shadow:1px 1px 11px rgb(77, 145, 255);
-$neonBlue: rgb(77, 145, 255);
+$neonBlue: #4d91ff;
 $neonyellow: rgb(255, 252, 77);
 
 //universal
@@ -28,6 +28,7 @@ p{
 }
 
 //Navigation begins below
+
 .top-2{
     min-height: 100%;
     width:100%;
@@ -71,7 +72,97 @@ p{
             &:active{
                 box-shadow: $blue-box-shadow; 
             }
+            a{
+                color:black;
+                text-decoration: none;
+            }
         }
+
+        //Covid Api Search bar 
+        .search-covid-api{
+
+            outline:none;
+            width:350px;
+            height:45px;
+            border-radius: 20px;
+            box-shadow: $blue-box-shadow;
+            border:none;
+            font-size:24px;
+            text-align:center;
+
+        }
+        .select-covid-api{
+            margin:25px;
+            outline:none;
+            width:350px;
+            height:45px;
+            border-radius: 15px;
+            box-shadow: $blue-box-shadow;
+            border:none;
+            font-size:25px;
+            text-align: center;
+
+        }
+        //Galaxy fold
+        @media screen and (max-width: 280px) {
+            .select-covid-api{
+                width:250px;
+            }
+            .search-covid-api{
+                width:250px;
+            }
+        }
+
+        //Tablets
+        @media screen and (min-width: 820px) and (max-width:1368px){
+            .select-covid-api{
+                width:550px;
+                height:75px;
+            }
+            .search-covid-api{
+                width:550px;
+                height:75px;
+            }
+            .output-text{
+                font-size:8vw;
+                font-size:8vh;
+            }
+        }
+        //4k Monitor (minimum width)
+        @media screen and (min-width: 1555px){
+            .select-covid-api{
+                width:1000px;
+                height:100px;
+                font-size:2vw;
+            }
+            .search-covid-api{
+                width:1000px;
+                height:100px;
+                font-size:2vw;
+            }
+            .output-text{
+                font-size:8vw;
+                font-size:8vh;
+            }
+        }
+        //4k Monitor (minimum height)
+        @media screen and (min-height: 1555px){
+            .select-covid-api{
+                width:1000px;
+                height:160px;
+                font-size:6vw;
+            }
+            .search-covid-api{
+                width:1000px;
+                height:160px;
+                font-size:6vw;
+            }
+            .output-text{
+                font-size:8vw;
+                font-size:8vh;
+            }
+        }
+
     }
 }
 
@@ -141,8 +232,25 @@ p{
             height: calc(100% - 39px);
             display: none;
         }
-
+        //Mobile and Tablet
         @media screen and (max-width: 900px) {
+            .ham{
+                display:inline-block;
+                max-width:30px;
+                height:30px;
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+            } 
+
+            .navbar{
+                display:none;
+            }
+        }
+        //4K Monitor
+        @media screen and (min-width: 1555px){
             .ham{
                 display:inline-block;
                 max-width:30px;
