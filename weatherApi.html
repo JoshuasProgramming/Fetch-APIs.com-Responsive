@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Covid Api</title>
+    <title>Weather Api</title>
 </head>
 <body>
     <!--Navigation bar & hero section below-->
@@ -13,8 +13,8 @@
         <header>
             <p><a href="index.html" class="landing-direct">Fetch Apis.com</a></p>
                 <ul class="navbar">
-                    <li><a href="covidApi.html" style="color:#4d91ff">Covid Api Tracker</a></li>
-                    <li><a href="weatherApi.html">Weather API</a></li>
+                    <li><a href="covidApi.html">Covid Api Tracker</a></li>
+                    <li><a href="weatherApi.html" style="color:#4d91ff">Weather API</a></li>
                     <li><a href="#">Movie Api</a></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Register</a></li>
@@ -38,15 +38,19 @@
     <section class="top-2">
         <div class="top-2-text">
            <!--Search bar-->
-           <input type="search" class="search-covid-api" id="search_covid_api" placeholder="Enter Country">
+           <input type="search" class="search-covid-api" id="country_weather" placeholder="enter location">
 
             <!--Select Covid Options-->
-            <select class="select-covid-api" id="select_covid_api" disabled>
+            <select class="select-covid-api" id="select_weather_api" disabled>
                 <option value="select">Select</option>
-                <option value="covid_deaths">Covid Deaths</option>
-                <option value="covid_cases">Covid Cases</option>
-                <option value="incident_rate">Incident Rate</option>
-                <option value="mortality_rate">Mortality Rate</option>
+                <option value="Temperature(f)">Temperature(f)</option>
+                <option value="Temperature(c)">Temperature(c)</option>
+                <option value="wind (mph)">wind (mph)</option>
+                <option value="wind (kph)">wind (kph)</option>
+                <option value="humidity">humidity</option>
+                <option value="uv">uv</option>
+                <option value="Condition">Condition</option>
+                <option value="Last Updated">Last Updated</option>
             </select>
 
             <!--Container for output-->
@@ -59,6 +63,6 @@
             </div>
         </div>    
    </section>
-    <script src="covid_api_script.js"></script>
+    <script src="weather_api_script.js"></script>
 </body>
 </html>
