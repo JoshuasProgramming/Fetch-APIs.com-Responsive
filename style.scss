@@ -110,9 +110,8 @@ p{
             }
 
             .landing-direct:hover{
-                border-bottom: 1px solid black;
-                transition: 1s;
-                cursor:pointer;
+                text-shadow: 1px 1px 30px $neonBlue;
+                cursor: pointer;
             }
     
         }
@@ -131,8 +130,8 @@ p{
                     color: white;
 
                     &:hover{
-                        border-bottom: 1px solid black;
-                        transition: 3s;
+                        text-shadow: 1px 1px 30px $neonBlue;
+                        cursor: pointer;
                     }
                 } 
             }
@@ -195,7 +194,8 @@ p{
         margin:10px;
         a{
             text-decoration: none;
-            font-size: 12vw;
+            font-size: 8vw;
+            font-size:6vh;
             color: black;
         } &:hover{
             font-weight: bold;

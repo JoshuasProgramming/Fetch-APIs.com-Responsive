@@ -132,9 +132,7 @@ p {
 }
 
 .top header p .landing-direct:hover {
-  border-bottom: 1px solid black;
-  -webkit-transition: 1s;
-  transition: 1s;
+  text-shadow: 1px 1px 30px #4d91ff;
   cursor: pointer;
 }
 
@@ -158,9 +156,8 @@ p {
 }
 
 .top header .navbar li a:hover {
-  border-bottom: 1px solid black;
-  -webkit-transition: 3s;
-  transition: 3s;
+  text-shadow: 1px 1px 30px #4d91ff;
+  cursor: pointer;
 }
 
 .top header .ham {
@@ -241,7 +238,8 @@ p {
 
 .popup li a {
   text-decoration: none;
-  font-size: 12vw;
+  font-size: 8vw;
+  font-size: 6vh;
   color: black;
 }
 
