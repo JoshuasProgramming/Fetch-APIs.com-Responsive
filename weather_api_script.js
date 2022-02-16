@@ -15,7 +15,7 @@ country_weather.addEventListener("keyup", (e)=>{
     let country = country_weather.value;
 
     //weather api url witch concatenate
-    let url = "http://api.weatherapi.com/v1/current.json?key=21ed8138dc4749ff97381453220402&q=" + country +"&aqi=no";
+    let url = "https://api.weatherapi.com/v1/current.json?key=21ed8138dc4749ff97381453220402&q=" + country +"&aqi=no";
 
     /**
      * 1.Fetch the url of the weather data
@@ -28,7 +28,7 @@ country_weather.addEventListener("keyup", (e)=>{
 
         //When the user has entered a location that does exist
         //1.We'll turn the select option element on
-        //2.We'll allow the user to select options from the "select_weather_api's" childern
+        //2.We'll allow the user to select options from the "select_weather_api's" children
         //3.We'll output the text element depending on what user selected
         if(data.current !== undefined){
             select_weather_api.disabled = false;
