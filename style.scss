@@ -77,6 +77,83 @@ p{
                 text-decoration: none;
             }
         }
+
+        .register-form{
+            width:260px;
+            height:375px;
+            box-shadow: 3px 3px 30px $neonBlue;
+            border-radius: 15px;
+
+            display:flex;
+            align-items: center;
+            justify-content:space-evenly;
+            flex-direction: column;
+
+            .register-username{
+                box-shadow: 1px 15px 3px $neonBlue;
+                border-radius: 5px;
+                width:225px;
+                height:50px;
+                border:none;
+                text-align: center;
+                background: transparent;
+                color:white;
+                font-size:25px;
+                outline:none;
+            }
+
+            .register-email{
+                box-shadow: 1px 15px 3px $neonBlue;
+                border-radius: 5px;
+                width:225px;
+                height:50px;
+                border:none;
+                text-align: center;
+                background: transparent;
+                color:white;
+                font-size:25px;
+                outline:none;
+            }
+
+            .register-password{
+                box-shadow: 1px 15px 3px $neonBlue;
+                border-radius: 5px;
+                width:225px;
+                height:50px;
+                border:none;
+                text-align: center;
+                background: transparent;
+                color:white;
+                font-size:25px;
+                outline:none;
+            }
+
+            .register-confirm-password{
+                box-shadow: 1px 15px 3px $neonBlue;
+                border-radius: 5px;
+                width:225px;
+                height:50px;
+                border:none;
+                text-align: center;
+                background: transparent;
+                color:white;
+                font-size:25px;
+                outline:none;
+            }
+
+            .register-btn{
+                box-shadow: 1px 15px 3px $neonyellow;
+                border-radius: 5px;
+                width:225px;
+                height:50px;
+                border:none;
+                text-align: center;
+                background: transparent;
+                color:white;
+                font-size:25px;
+                outline:none;
+            }
+        }
     
         .login-form{
             width:250px;
