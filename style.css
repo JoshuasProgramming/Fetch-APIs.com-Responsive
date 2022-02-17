@@ -89,6 +89,69 @@ p {
   text-decoration: none;
 }
 
+.top-2 .top-2-text .login-form {
+  width: 250px;
+  height: 275px;
+  -webkit-box-shadow: 3px 3px 30px #4d91ff;
+          box-shadow: 3px 3px 30px #4d91ff;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.top-2 .top-2-text .login-form .login-username {
+  -webkit-box-shadow: 1px 15px 3px #4d91ff;
+          box-shadow: 1px 15px 3px #4d91ff;
+  border-radius: 5px;
+  width: 225px;
+  height: 55px;
+  border: none;
+  text-align: center;
+  background: transparent;
+  color: white;
+  font-size: 25px;
+  outline: none;
+}
+
+.top-2 .top-2-text .login-form .login-password {
+  -webkit-box-shadow: 1px 15px 3px #4d91ff;
+          box-shadow: 1px 15px 3px #4d91ff;
+  border-radius: 5px;
+  width: 225px;
+  height: 55px;
+  border: none;
+  text-align: center;
+  background: transparent;
+  color: white;
+  font-size: 25px;
+  outline: none;
+}
+
+.top-2 .top-2-text .login-form .login-btn {
+  -webkit-box-shadow: 1px 15px 3px #fffc4d;
+          box-shadow: 1px 15px 3px #fffc4d;
+  border-radius: 5px;
+  width: 225px;
+  height: 55px;
+  border: none;
+  text-align: center;
+  background: transparent;
+  color: white;
+  font-size: 25px;
+  outline: none;
+}
+
 .top-2 .top-2-text .search-covid-api {
   outline: none;
   width: 350px;

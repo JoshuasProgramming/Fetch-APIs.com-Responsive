@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Fetch APIs.com</title>
+    <title>Login</title>
 </head>
 <body>
     <!--Navigation bar & hero section below-->
@@ -37,12 +37,18 @@
 
     <section class="top-2">
         <div class="top-2-text">
-            <h1 class="home-header"><center>Your one way ticket for</center></h1>
-            <h1 class="home-header blue"><center>FETCH API</center></h1>
-            <h1 class="home-header"><center>Applications</center></h1>
-            <center><button class="header-text-btn"><a href="covidApi.html">Lets Go!</a></button></center>
-        </div>    
-   </section>
-    <script src="script.js"></script>
+            <form action="#" method="#" class="login-form">
+                <input placeholder="username" class="login-username">
+                <input placeholder="password" class="login-password" type="password" id="login_password">
+                <button name="submit" class="login-btn">Login</button>
+            
+                <div class="show-password-container">
+                    <input type="checkbox" id="login_password_checkbox" class="login-password-checkbox">
+                    <label for="login_password_checkbox">Show Password</label>
+                </div>
+            </form>
+        </div>   
+    </section>
+    <script src="login.js"></script>
 </body>
 </html>
